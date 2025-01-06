@@ -7,8 +7,8 @@ import  Ele from './assets/ele.svg';
 import  DS from './assets/ds.svg';
 import  ME from './assets/me.svg';
 import  MBA from './assets/mba.svg';
-// import  MCA from './assets/com2.svg';
-import  Homee from './assets/home_logo.png';
+import  MCAA from './assets/mcaaa.svg';
+// import  Homee from './assets/home_logo.png';
 import { useNavigate } from "react-router-dom";
 
 
@@ -97,7 +97,7 @@ const handleAiclick=()=>{
 
         <div className='deparment'>
                       <div className='box'>
-                             {/* <img src={} alt="" /> */}
+                             <img src={MCAA} alt="" />
                                <h3>MCA</h3>
                                 <button onClick={handlemcaClick}>Explore</button>
                       </div>
