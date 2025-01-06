@@ -1,0 +1,161 @@
+.home-contaier {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  min-height: 100vh;
+  box-sizing: border-box; 
+}
+
+.all {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.all span {
+  text-decoration: underline;
+  color: rgb(255, 189, 67);
+}
+
+.home-header h1 {
+  font-size: 2em;
+  color: #FFF;
+  font-weight: bold;
+  font-family: sans-serif;
+  white-space: nowrap; 
+  overflow: hidden; 
+  /* border-right: 3px solid #00F2FE; */
+  /* animation: typing 5s steps(30) forwards, blink 0.7s step-end infinite; */
+  text-align: center; /* Center text */
+  opacity: 0;
+    animation: fadeIn 5s forwards;
+}
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+/* @keyframes typing {
+  0% {
+      width: 0;
+  }
+  20% {
+      width: 25ch; 
+  }
+  100% {
+      width: 0; 
+  }
+}
+
+@keyframes blink {
+  50% {
+      border-color: transparent; 
+  }
+} */
+
+.deparment {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  margin: 20px 0; 
+  gap: 15px; 
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 180px;
+  height: 180px;
+  border: 1px solid #000;
+  margin: 5px;
+  border-radius: 8px;
+   /* background-color: #333; 
+   box-shadow: 0 4px 5px rgba(0, 0, 0, 1); */
+  
+}
+
+img {
+  width: 90px;
+  height: auto; 
+}
+
+h3 {
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  margin: 10px 0; 
+}
+
+.box button {
+  padding: 7px 35px;
+  border-radius: 10px;
+  border: none;
+  background-color: #1d4ed8;
+  font-size: 12px;
+  font-weight: 400;
+  cursor: pointer;
+  color: #fff;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.box button:hover {
+  background-color: #172554;
+  background-color: #128381;
+  text-decoration: underline;
+  color: #fff;
+  transform: scale(1.05); 
+}
+
+@media (max-width: 768px) {
+  .box {
+      width: 150px;
+      height: 150px;
+  }
+
+  img {
+      width: 70px;
+  }
+
+  h3 {
+      font-size: 14px;
+  }
+
+  .box button {
+      padding: 5px 25px;
+      font-size: 11px;
+  }
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 480px) {
+  .home-header h1 {
+      font-size: 1.5em;
+  }
+
+  .all {
+      font-size: 1.2rem;
+  }
+
+  .box {
+      width: 120px;
+      height: 120px;
+  }
+
+  img {
+      width: 60px;
+  }
+
+  h3 {
+      font-size: 12px;
+  }
+
+  .box button {
+      padding: 5px 20px;
+      font-size: 10px;
+  }
+}

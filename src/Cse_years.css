@@ -1,0 +1,87 @@
+.years-container{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+}
+
+.years-header{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px;
+}
+.years{
+              width: 250px;
+              height: 250px;
+              border: 2px solid gray;
+              margin: 5px 5px;
+              display: flex;
+              align-items: center;
+              flex-direction: column;
+              justify-content: center;
+              border-radius: 10px;
+            
+}
+
+
+
+.sem{
+      margin: 7px;
+      padding: 7px 30px;
+      font-size: 12px;
+      border-radius: 10px;
+      background: linear-gradient(90deg, #007CF0, #00DFD8);
+      border: none;
+      color: #fff;
+      font-weight: 100px;
+      cursor: pointer;
+     
+
+}
+
+.sem:hover{
+        background: red;
+    
+       
+}
+
+
+
+@media (max-width: 768px) {
+      .years-header {
+        flex-direction: row; /* Still use row layout */
+        gap: 15px; /* Reduce gap for smaller screens */
+      }
+    
+      .years {
+        width: 250px; /* Reduce size of the boxes */
+        height: 250px;
+      }
+    
+      .sem {
+        padding: 8px 16px; /* Adjust button size */
+        font-size: 12px; /* Adjust font size for smaller buttons */
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .years-header {
+        flex-direction: column; /* Switch to column layout */
+        gap: 10px; /* Smaller gap for tighter layout */
+      }
+    
+      .years {
+        width: 100%; /* Full width for small screens */
+        max-width: 300px; /* Limit max width */
+        height: auto; /* Allow height to adjust */
+        padding: 20px;
+      }
+    
+      .sem {
+        padding: 6px 12px; /* Further reduce button size */
+        font-size: 11px;
+      }
+    }
+    
+
